@@ -1,0 +1,284 @@
+    body {
+        margin: 0%;
+        font-family: Arial, sans-serif;
+    }
+
+    /* ici les images présentent sur la nav bar (logo et picto panier) */
+    
+    #logo img {
+        width: 200px;
+    }
+    .lien-navbar img {
+    width: 30px;
+    }
+
+
+    /* ici le CSS de la nav bar */
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: white;
+        top: 0;
+        left: 0;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Si envie de mettre un shadow mais il faut retirer le bg trensparent */ 
+        position: sticky;
+    }
+
+    .lien-navbar {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lien-navbar a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 5px 10px;
+        transition: color 0.1s, background-color 0.1s, border 0.1s;
+    }
+
+    .lien-navbar li:not(#pictopanier) a:hover {
+        color: #D3D3D3;
+    }
+
+    /* Styles pour le picto panier avant le hover */
+    #pictopanier img {
+        transition: transform 0.3s ease; /* Ajoute une transition douce */
+    }
+
+    /* Styles pour le picto panier lors du hover */
+    #pictopanier img:hover {
+        transform: scale(1.8); /* Fait grossir l'image de 80% */
+    }
+
+    .lien-navbar img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .lien-navbar {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ici FIN du CSS de la nav bar */
+
+
+    /* ici CSS de la HERO section */
+
+
+    .herosection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+    .text-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+    }
+    
+    .text-hero h1 {
+        font-size: 48px;
+        display: flex;
+    }
+    
+    .shop-now {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .shop-now:hover {
+        background-color: black;
+        color: white;
+    }
+    /* ici FIN du CSS de la HERO section */
+
+
+    .entre-section {
+        text-align: center;
+        font-size: 38px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .home-items {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .home-items div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .home-items img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .home-items p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    .price {
+        font-weight: bold;
+        color: black;
+    }
+
+    /* Ici FIN de la Section home-items */
+
+
+    /* Ici FOOTER */
+
+    .footer {
+        background-color: #fff;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .newsletter-signup {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-left: 12px;
+        margin-right: 138px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .newsletter-signup p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .signup-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .signup-form input[type="email"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 0px solid #000;
+        margin-right: 10px;
+        width: 300px;
+    }
+    
+    .signup-form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .signup-form button:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .footer-brand {
+        flex: 1;
+    }
+    
+    .footer-brand h3 {
+        font-size: 36px;
+        margin: 0;
+        text-align: left;
+        margin-left: 12px;
+    }
+    
+    .footer-brand p {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex: 2;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .footer-links div {
+        flex: 1;
+        min-width: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-links h2 {
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+    
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-links a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+        color: grey;
+    }
+    
+  
+    @media (max-width: 576px) { 
+
+        .footer-main {
+
+            flex-direction: column;
+        }    
+     } 
